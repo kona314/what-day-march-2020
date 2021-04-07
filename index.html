@@ -79,7 +79,8 @@
         let today = moment()
         let origin = moment("2020-03-01", "YYYY-MM-DD")
         let diff = today.diff(origin, "days")
-        document.getElementById("number").innerHTML = diff + "<sup>" + ordinal(diff) + "</sup>"
+        let todaysNumber = diff + 1
+        document.getElementById("number").innerHTML = todaysNumber + "<sup>" + ordinal(todaysNumber) + "</sup>"
         console.log(diff)
         addQuip()
     </script>
